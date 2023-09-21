@@ -1,5 +1,13 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+  import HelloWorld from "./components/HelloWorld.vue"
+
+  export default {
+    data() {
+      return {
+        message: "hello world",
+      }
+    }
+  }
 </script>
 
 <template>
@@ -12,6 +20,8 @@ import HelloWorld from './components/HelloWorld.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+
+  <p>{{ message }}</p>
 </template>
 
 <style scoped>
