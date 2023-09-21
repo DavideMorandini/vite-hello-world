@@ -1,15 +1,24 @@
 <script>
+import Title from "./components/AppTitle.vue"
+import Jumbotron from "./components/AppHero.vue"
+
   export default {
     data() {
       return {
-        message: "hello vite",
+        message: "Hello Vite!",
       }
-    }
+    },
+    components: {
+      Title,
+      Jumbotron,
+    },
   }
 </script>
 
 <template>
-  {{ message }}
+  <Title></Title>
+  <Jumbotron></Jumbotron>
+  <h1>{{ message }}</h1>
 </template>
 
 <style scoped>
